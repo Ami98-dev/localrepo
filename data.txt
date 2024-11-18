@@ -1,0 +1,85 @@
+Repository : means Folder
+Commit:means Change finalize ,history saved
+
+COMMAND LIST :
+git --version
+ls : list files
+clear
+pwd : working diretory (c or d drive)
+git config --global user.name "My Name"
+git config --global user.email "My Email" 
+git config --list  
+cd first-demo
+ls , ls -a
+add: git add <--file name--> ,git add .
+commit :git commit -m "some message"
+
+git push origin main
+mkdir "FolderName"
+git init 
+git remote add origin
+
+
+
+
+------------------------------------------------ to start project located at GITHUB---------------------------------------------
+
+" ------ open folder like here GITDEMO 
+https://prnt.sc/M7kT4t0qv3-Q then use below command to access Repository from Remote to on our local machine -----"
+
+1) Configuring Git : choose which account we have to configure
+    git config --global user.name "My Name"    :(my name is : name of github account)
+    git config --global user.email "My Email"   :(my email is : name of github email)
+
+    to show config : git config --list  
+
+2) Basic Command :
+    a) CLONE COMMAND : 
+
+    --> Clone - cloning /duplicate a Repository from Remote to on your local machine (local:laptop/PC,Remote:Github) 
+                git clone <-GITHUB Repository LINK-> git clone https://github.com/Ami98-dev/first-demo.git  (https://prnt.sc/VQrsKSiGDUBc)
+
+- if we want to Change Directory or folder use : cd 
+- suppose if we want to go inside of main folder : cd first-demo
+- suppose if we want to show all files of floder : ls (noraml files) , ls -a (list all files hidden also)
+
+if we enter command  like  ls -a and we show .git means it's a github files
+
+    b) STATUS COMMAND : Display the state of the code 
+       we have 4 status if we use status command 
+          a)untracked : new files that git doesn't yet track
+          b)modified : changed/update/edit
+          c)staged : file is ready to be commited (when we git add :then auomatically that files are called staged)
+          d)unmodified: unchanged
+    
+-> if we modified/add/change/update code and save then follow 3 command(add,commit) to save in Github 
+    i)  add(staged) : to add new file or changed files in your working directory  to the git staging area 
+        git add <--file name--> if we have so may files to add then use  git add .            
+    ii) Commit(unchanged): new recently added file are redy for commit and upload to github ;it is the record of change 
+        git commit -m "some message"
+    iii) push : upload local repo content  to remote Repository
+        git push origin main
+
+
+
+
+
+------------------------------------------------ to start project located at LOCAL ---------------------------------------------
+to create folder directly inside drive we will use to create folder using CLI 
+
+cd..
+mkdir LocalRepo : to create new directory/folder mkdir "foldername"
+
+check if git is there or not 
+use command :  git status 
+it will not display git for that use
+1) git init : used to create a new git repo :initialize an existing directory as a Git repository
+
+go to github create new Repository (https://prnt.sc/aKzIUQeFOcxP) : add new : Create Repository
+2) git remote add origin <---link-> :git remote add origin https://github.com/Ami98-dev/localrepo.git
+3) git remote -v (to verify remote)
+4) git branch : to check which branch  (main branch : clone branch (frntendtem,developerteam,testingteam))
+5) git branch -M main : to rename branch
+6) git push origin main : all local files migrate to github 
+   suppose if we work only one project for long time and everytime we have to write "git push origin main" so we can add shortcode like "git push -u origin main"
+   so we just now add command "git push"
